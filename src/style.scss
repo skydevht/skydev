@@ -1,5 +1,272 @@
-@import '_component/config/color';
-@import '_component/config/typography';
-@import '_component/layout/layout';
-@import '_component/header/header';
-@import '_component/footer/footer';
+@import "../node_modules/amazium/scss/amazium.scss";
+@import "./icons.scss";
+
+@import "./_component/header/header.scss";
+@import "./_component/footer/footer.scss";
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:300,400,900|Roboto:300,400,500');
+
+$primary: #3C999C;
+$white: #fff;
+$red: #EB5757;
+$blue: #34537D;
+$green: #219653;
+
+@mixin bg($color) {
+    background-color:$color;
+}
+
+.bg-red {
+   @include bg($red);
+}
+
+.bg-blue {
+   @include bg($blue);
+}
+
+.bg-green {
+   @include bg($green);
+}
+
+.bg-white {
+   @include bg($white);
+}
+
+// Amazium overrride
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: #e8e8e8;
+    font-family: Roboto, 'sans-serif';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Encode Sans Condensed", serif;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+input, textarea {
+    font-size: 16px;
+    padding: 20px 40px;
+}
+
+.banner {
+    position: relative;
+    padding: 160px 0;
+    text-align: center;
+    background: url('/asset/image/banner.jpg');
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+
+    .overlay {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .71);
+    }
+
+    .menu {
+        position: absolute;
+        z-index: 16;
+        color: #fff;
+        font-size: 36px;
+        top: 24px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .content {
+        position: relative;
+        z-index: 4;
+
+        .logo {
+            background-color: rgba(255, 255, 255, 0.90);
+            width: 256px;
+            height: 256px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 500px;
+            margin-bottom: 114px;
+        }
+    }
+
+    .headline {
+        font-size: 72px;
+        font-weight: 900;
+        margin-bottom: 32px;
+
+        .accent {
+            color: #3C999C;
+        }
+    }
+
+    .subtitle {
+        font-size: 36px;
+        font-weight: 400;
+        font-family: Roboto;
+
+        .name {
+            color: $primary;
+            font-weight: bold;
+        }
+    }
+}
+
+
+section {
+    padding: 120px 0;
+
+    .title {
+        font-size: 72px;
+        margin-bottom: 64px;
+        color: $primary;
+    }
+
+    &.inverse {
+        color: $white;
+
+        .title {
+            color: $white;
+        }
+
+    }
+}
+
+.about {
+    padding: 0;
+    background-color: #fff;
+    .me {
+        display: flex;
+        align-items: end;
+        min-height: 100%;
+        padding-top: 20px;
+        img {
+            vertical-align: bottom;
+        }
+    }
+    .bio {
+        padding: 120px 0;
+    }
+}
+
+
+.services {
+
+    div[class^="hexagon"] {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 110px;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .service-name {
+        font-size: 36px;
+        color: rgba(0, 0, 0, .71);
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+.portfolio  {
+    @include bg($white);
+}
+
+.testimonies {
+    .testimony-text {
+        font-size: 48px;
+        font-style: italic;
+        font-weight: 300;
+        color: rgba(0, 0, 0, .71);
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+
+    .testimony-author {
+        color: rgba(0, 0, 0, .71);
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+.contact {
+    background: url("/asset/image/bg.png");
+    background-position: center center;
+    background-size: cover;
+
+    input {
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    textarea  {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .btn {
+        padding: 20px 60px;
+        background-color: $red;
+        font-weight: 500;
+    }
+}
+
+
+@mixin hexagon($color) {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  background-color: $color;
+  margin: 86.60px 0;
+
+  &:before,
+  &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+  }
+
+  &:before {
+      bottom: 100%;
+      border-bottom: 86.60px solid $color;
+  }
+
+  &:after {
+      top: 100%;
+      width: 0;
+      border-top: 86.60px solid $color;
+  }
+}
+
+.hexagon-red {
+    @include hexagon($red)
+}
+
+.hexagon-blue {
+    @include hexagon($blue)
+}
+
+.hexagon-green {
+    @include hexagon($green)
+}
+
+

@@ -2,10 +2,31 @@ $class: 'footer';
 
 .#{$class} {
   display: flex;
-  height: 2rem;
+  flex-direction: column;
+  padding: 72px 0 16px;
   align-items: center;
-  justify-content: space-around;
-  background-color: $pearl-bush;
-  border-top-left-radius: 0.2rem;
-  border-top-right-radius: 0.2rem;
+  justify-content: center;
+  color: #fff;
+  background-color: #223838;
+
+  .social-links {
+      margin: 0 0 70px;
+      padding: 0;
+      list-style: none;
+      display: flex;
+
+      li {
+          margin: 0 24px;
+          padding: 0;
+
+          a {
+              font-size: 48px;
+              text-decoration: none;
+          }
+      }
+  }
+
+  .copyright {
+      text-align: center;
+  }
 }

@@ -1,5 +1,8 @@
 include ../mixin/link
 footer.footer
-  div &copy; #{(new Date()).getFullYear()}
-  div
-    | Powered by #[+link('http://bitbee.uk', 'BitBee Limited')]
+    ul.social-links
+        li: a.icon-facebook2(href="#")
+        li: a.icon-twitter(href="#")
+        li: a.icon-github(href="#")
+        li: a.icon-linkedin(href="#")
+    .copyright &copy; #{(new Date()).getFullYear()} | Skydev

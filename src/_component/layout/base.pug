@@ -2,6 +2,7 @@ doctype html
 html(lang="en")
   block settings
   head
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
     if title
       title #{title}
     if description
@@ -9,8 +10,6 @@ html(lang="en")
     if config.entry.css.embed
       link(rel="stylesheet" href=`${embedPath}` inline)
   body
-    .container
-      include ../header/header
       .content
         block content
       include ../footer/footer

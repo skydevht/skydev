@@ -1,13 +1,57 @@
 extends _component/layout/base
 block settings
-  - title = 'Welcome to Pug Starter';
+  - title = 'Skydev';
   - description = 'Simple pug (jade) starter aimed to quickly deliver HTML & CSS projects';
 
 block content
-  h1 Welcome to pug starter!
-  p Simple pug (jade) starter [framework] enabling faster delivery of HTML &amp; CSS projects to a private server and/or automatic deployment of GitHub pages.
-  p There are #{data.menu.length} items in the menu.
-  :markdown-it
-    # Support for markdown
-    - one
-    - two
+    .banner
+        .overlay
+        .menu: a.icon-menu
+        .content
+            .logo: img(src="/asset/image/logo.png",width="160")
+            h1.headline Hi! I'm #[span.accent YOUR] developer
+            h3.subtitle My name is #[span.name Holy-Elie Scaide]
+    section.about: .row
+        .grid-4: .me
+            img.img--max(src="/asset/image/hash.png")
+        .grid-8: .bio
+            h1.title About Me
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique justo ac dolor dictum, in hendrerit tortor consectetur. Suspendisse facilisis, purus id varius pretium, metus enim sodales ex, ut pulvinar urna justo sit amet ante. 
+    section.services
+        h1.title.txt--center What I Do
+        .row
+            .grid
+                .hexagon-red: img(src="/asset/image/ui.png")
+                p.service-name UI/UX Design
+            .grid
+                .hexagon-blue: img(src="/asset/image/mobile.png")
+                p.service-name Mobile App
+            .grid
+                .hexagon-green: img(src="/asset/image/web.png")
+                p.service-name Web App
+    section.portfolio
+        h1.title.txt--center Portfolio
+        .row
+            .grid-4
+                .p-item
+                    img.img--max(src="/asset/image/dike.jpg")
+            .grid-4
+                .p-item
+                    img.img--max(src="/asset/image/edikel.jpg")
+            .grid-4
+                .p-item
+                    img.img--max(src="/asset/image/domino.jpg")
+    section.testimonies
+        h1.title.txt--center Testimony
+        p.testimony-text.txt--center "Always a great job"
+        p.testimony-author.txt--center Jama Mohamed
+    section.contact.inverse
+        h1.title.txt--center Contact
+        form
+            .row
+                .grid-6: input(type="text",placeholder="First Name")
+                .grid-6: input(type="text",placeholder="Last Name")
+            .row: .grid: input(type="text",placeholder="Email")
+            .row: .grid: textarea(placeholder="Message")
+            .row: .grid.txt--center: button.btn.btn--large.bg--red Send Message
+

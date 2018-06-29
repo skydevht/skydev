@@ -1,2 +1,10 @@
 header.header
-  include ../menu/menu
+    nav.navbar.navbar-expand-lg.navbar-light.bg-white: .container
+        a.navbar-brand(href="#") SKYDEV
+        button.navbar-toggler(type="button",data-toggle="collapse",data-target="#navbarSupportedContent",aria-controls="navbarSupportedContent",aria-expanded="false",aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+        div.collapse.navbar-collapse#navbarSupportedContent
+            .flex-fill
+            ul.navbar-nav
+                li.nav-item.active
+                    a.nav-link(href="#") Home 
