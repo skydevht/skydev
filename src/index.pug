@@ -53,11 +53,11 @@ block content
         p.testimony-author.txt--center(data-aos="fade") Jama Mohamed
     section.contact.inverse#contact
         h1.title.txt--center Contact
-        form(data-aos="fade",data-aos-delay="500")
+        form(data-aos="fade",data-aos-delay="500",action="https://formspree.io/contact@skydev.tech",method="POST")
             .row
-                .grid-6: input(type="text",placeholder="First Name")
-                .grid-6: input(type="text",placeholder="Last Name")
-            .row: .grid: input(type="text",placeholder="Email")
-            .row: .grid: textarea(placeholder="Message")
-            .row: .grid.txt--center: button.btn.btn--large.bg--red Send Message
+                .grid-6: input(type="text",placeholder="First Name",name="first-name")
+                .grid-6: input(type="text",placeholder="Last Name",name="last-name")
+            .row: .grid: input(type="text",placeholder="Email",name="email")
+            .row: .grid: textarea(placeholder="Message",name="message")
+            .row: .grid.txt--center: input.btn.btn--large.bg--red(type="submit",value="Send Message") 
 
