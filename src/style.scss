@@ -61,20 +61,24 @@ input, textarea {
     list-style: none;
     position: absolute;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background-color: #000;
     top: 0;
-    height: 85px;
     left: 0;
     right: 0;
     z-index: 0;
-    padding: 0 48px;
+    padding: 24px 24px;
     transition: all 500ms ease-in-out;
 
     li {
         margin: 0;
         padding: 0;
+        margin-bottom: 24px;
+        &:last-child {
+            margin-bottom: 0
+        }
 
         a {
             font-size: 24px;
@@ -91,10 +95,21 @@ input, textarea {
     &.opened {
         opacity: 1;
         z-index: 100;
-
     }
 }
 
+@media only screen and (min-width:$grid-width-smscreen - 1px) {
+    #menu {
+        flex-direction: row;
+        height: 85px;
+        padding: 0 48px;
+
+        li {
+            margin-bottom: 0;
+        }
+
+    }
+}
 // PAGE Sections
 
 .banner {
@@ -233,6 +248,10 @@ section {
 
 .portfolio  {
     @include bg($white);
+
+    .p-item {
+        margin-bottom: 20px;
+    }
 }
 
 .testimonies {
