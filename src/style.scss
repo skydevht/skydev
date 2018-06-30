@@ -53,9 +53,54 @@ input, textarea {
     padding: 20px 40px;
 }
 
+#menu {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    color: #fff;
+    list-style: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    top: 0;
+    height: 85px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    padding: 0 48px;
+    transition: all 500ms ease-in-out;
+
+    li {
+        margin: 0;
+        padding: 0;
+
+        a {
+            font-size: 24px;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    &.opened {
+        opacity: 1;
+        z-index: 100;
+
+    }
+}
+
+// PAGE Sections
+
 .banner {
     position: relative;
     padding: 160px 0;
+    margin: 0;
     text-align: center;
     background: url('/asset/image/banner.jpg');
     background-position: center center;
@@ -72,10 +117,11 @@ input, textarea {
         background: rgba(0, 0, 0, .71);
     }
 
-    .menu {
+    #menu-toggle {
         position: absolute;
         z-index: 16;
         color: #fff;
+        line-height: 1;
         font-size: 36px;
         top: 24px;
         left: 50%;

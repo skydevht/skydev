@@ -4,50 +4,56 @@ block settings
   - description = 'Simple pug (jade) starter aimed to quickly deliver HTML & CSS projects';
 
 block content
+    ul#menu
+        li: a(href="#about") About Me
+        li: a(href="#services") What I Do
+        li: a(href="#portfolio") Portfolio
+        li: a(href="#testimonies") Testimony
+        li: a(href="#contact") Contact
     .banner
         .overlay
-        .menu: a.icon-menu
+        #menu-toggle: a.icon-menu
         .content
-            .logo: img(src="/asset/image/logo.png",width="160")
-            h1.headline Hi! I'm #[span.accent YOUR] developer
-            h3.subtitle My name is #[span.name Holy-Elie Scaide]
-    section.about: .row
+            .logo(data-aos="zoom-in",data-aos-delay="500"): img(src="/asset/image/logo.png",width="160")
+            h1.headline(data-aos="slide-left") Hi! I'm #[span.accent YOUR] developer
+            h3.subtitle(data-aos="slide-left") My name is #[span.name Holy-Elie Scaide]
+    section.about#about: .row
         .grid-4: .me
-            img.img--max(src="/asset/image/hash.png")
+            img.img--max(src="/asset/image/hash.png",data-aos="fade-right",data-aos-anchor-placement="center-bottom")
         .grid-8: .bio
-            h1.title About Me
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique justo ac dolor dictum, in hendrerit tortor consectetur. Suspendisse facilisis, purus id varius pretium, metus enim sodales ex, ut pulvinar urna justo sit amet ante. 
-    section.services
+            h1.title(data-aos="fade-left",data-aos-anchor-placement="center-bottom") About Me
+            p(data-aos="fade",data-aos-delay="1000",data-aos-anchor-placement="center-bottom") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique justo ac dolor dictum, in hendrerit tortor consectetur. Suspendisse facilisis, purus id varius pretium, metus enim sodales ex, ut pulvinar urna justo sit amet ante. 
+    section.services#services
         h1.title.txt--center What I Do
         .row
-            .grid
+            .grid: div(data-aos="fade-up",data-aos-offset="-20",data-aos-anchor-placement="center-bottom")
                 .hexagon-red: img(src="/asset/image/ui.png")
                 p.service-name UI/UX Design
-            .grid
+            .grid: div(data-aos="fade-up",data-aos-offset="-20",data-aos-anchor-placement="center-bottom")
                 .hexagon-blue: img(src="/asset/image/mobile.png")
                 p.service-name Mobile App
-            .grid
+            .grid: div(data-aos="fade-up",data-aos-offset="-20",data-aos-anchor-placement="center-bottom")
                 .hexagon-green: img(src="/asset/image/web.png")
                 p.service-name Web App
-    section.portfolio
+    section.portfolio#portfolio
         h1.title.txt--center Portfolio
         .row
             .grid-4
-                .p-item
+                .p-item(data-aos="fade",data-aos-anchor-placement="bottom-bottom")
                     img.img--max(src="/asset/image/dike.jpg")
             .grid-4
-                .p-item
+                .p-item(data-aos="fade")
                     img.img--max(src="/asset/image/edikel.jpg")
             .grid-4
-                .p-item
+                .p-item(data-aos="fade")
                     img.img--max(src="/asset/image/domino.jpg")
-    section.testimonies
+    section.testimonies#testimonies
         h1.title.txt--center Testimony
-        p.testimony-text.txt--center "Always a great job"
-        p.testimony-author.txt--center Jama Mohamed
-    section.contact.inverse
+        p.testimony-text.txt--center(data-aos="fade") "Always a great job"
+        p.testimony-author.txt--center(data-aos="fade") Jama Mohamed
+    section.contact.inverse#contact
         h1.title.txt--center Contact
-        form
+        form(data-aos="fade",data-aos-delay="500")
             .row
                 .grid-6: input(type="text",placeholder="First Name")
                 .grid-6: input(type="text",placeholder="Last Name")
