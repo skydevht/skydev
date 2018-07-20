@@ -2,27 +2,27 @@ doctype html
 html(lang="en")
     block settings
     head
-        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:300,400,900|Roboto:300,400,500")
         link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.2/aos.css")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
         if title
             title #{title}
         if description
             meta(content=description name="description")
         if config.entry.css.embed
             link(rel="stylesheet" href=`${embedPath}` inline)
-        script(async,src="https://www.googletagmanager.com/gtag/js?id=UA-119901517-2")
-        script.
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-119901517-2');
+        if config.entry.css.external
+            link(rel="stylesheet", href="/style.css")
     body
         .content
             block content
             include ../footer/footer
         script(type="text/javascript",src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.2/aos.js")
-        script(type="text/javascript",src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js")
+        script(type="text/javascript",src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
         script(src="/asset/js/main.js")
-if config.entry.css.external
-    link(rel="stylesheet", href="/style.css")
+        script(async,src="https://www.googletagmanager.com/gtag/js?id=UA-119901517-2")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-119901517-2');
