@@ -1,10 +1,65 @@
-header.header
-    nav.navbar.navbar-expand-lg.navbar-light.bg-white: .container
-        a.navbar-brand(href="#") SKYDEV
-        button.navbar-toggler(type="button",data-toggle="collapse",data-target="#navbarSupportedContent",aria-controls="navbarSupportedContent",aria-expanded="false",aria-label="Toggle navigation")
-            span.navbar-toggler-icon
-        div.collapse.navbar-collapse#navbarSupportedContent
-            .flex-fill
-            ul.navbar-nav
-                li.nav-item.active
-                    a.nav-link(href="#") Home 
+// Header area start
+header#header-area.header-area(data-spy='affix', data-offset-top='1')
+  nav.navbar
+    .container
+      .row
+        .col-sm-12
+          .navbar-inner
+            .logo
+              a(href='#')
+                img(src='/asset/image/logo.png', alt='')
+            #navigation.main-menu-wrapper
+              ul#main-menu.nav.navbar-nav.navbar-right
+                li.active
+                  a(href='#home') Home
+                li
+                  a(href='#about') About
+                li
+                  a(href='#service') Service
+                li
+                  a(href='#resume') Resume
+                li
+                  a(href='#contact') Contact
+            .expand-menu-open
+              span
+              span
+              span
+              span
+// Header area end
+// Slide menu start
+.mainmenu-expand
+  .close-menu
+    i.ti-close
+  .menu-logo
+    a(href='/')
+      img(src='/asset/image/logo.png', alt='')
+  nav.navbar
+    #navigation-2.mainmenu-box
+      ul#slide-nav.nav.navbar-nav
+        li.active
+          a(href='#home') Home
+        li
+          a(href='#about') About
+        li
+          a(href='#service') Service
+        li
+          a(href='#resume') Resume
+        li
+          a(href='#contact') Contact
+  .sidebar-bookmark-area
+    p Stay connected
+    ul.expand-social.social-bookmark
+      li
+        a(href='https://web.facebook.com/hescaide', target='_blank')
+          i.ti-facebook
+      li
+        a(href='https://twitter.com/hescaide', target='_blank')
+          i.ti-twitter
+      li
+        a(href='https://github.com/skydevht', target='_blank')
+          i.ti-github
+      li
+        a(href='https://www.linkedin.com/in/holy-elie-scaide-90393380/', target='_blank')
+          i.ti-linkedin
+  p.expand-copyright Copyright @ 2017 Skydev
+// Slide menu end

@@ -1,8 +1,22 @@
-include ../mixin/link
-footer.footer
-    ul.social-links
-        li: a.icon-facebook2(href="https://fb.com/skydev.tech")
-        li: a.icon-twitter(href="https://twitter.com/hescaide")
-        li: a.icon-github(href="https://github.com/skydevht")
-        li: a.icon-linkedin(href="https://www.linkedin.com/in/holy-elie-scaide-90393380/")
-    .copyright &copy; #{(new Date()).getFullYear()} | Skydev
+// Footer area start
+footer.footer-area.gray-bg
+  .container
+    .row
+      .col-lg-12
+        .social-bookmark.footer-social.text-center
+          ul
+            li
+              a(href='https://web.facebook.com/hescaide', target='_blank')
+                i.ti-facebook
+            li
+              a(href='https://twitter.com/hescaide', target='_blank')
+                i.ti-twitter
+            li
+              a(href='https://github.com/skydevht', target='_blank')
+                i.ti-github
+            li
+              a(href='https://www.linkedin.com/in/holy-elie-scaide-90393380/', target='_blank')
+                i.ti-linkedin
+        .copyright.text-center
+          p Copyright @ 2018 Skydev
+// Footer area end

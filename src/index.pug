@@ -1,65 +1,10 @@
-extends _component/layout/base
+extends _component/layout/base 
 block settings
   - title = 'Skydev';
   - description = 'The solution you need is just here';
-
 block content
-    ul#menu
-        li: a(href="#about") About Me
-        li: a(href="#services") What I Do
-        li: a(href="#portfolio") Portfolio
-        li: a(href="#testimonies") Testimony
-        li: a(href="#contact") Contact
-    .banner
-        .overlay
-        #menu-toggle: a.icon-menu
-        .content
-            .logo(data-aos="zoom-in",data-aos-delay="500"): img(src="/asset/image/logo.png",width="160")
-            h1.headline(data-aos="slide-left") Hi! I'm #[span.accent YOUR] developer
-            h3.subtitle(data-aos="slide-left") My name is #[span.name Holy-Elie Scaide]
-    section.about#about: .row
-        .grid-8.grid-12-tablet: .bio
-            h1.title(data-aos="fade-left",data-aos-anchor-placement="center-bottom") About Me
-            p(data-aos="fade",data-aos-delay="1000",data-aos-anchor-placement="center-bottom").
-                Holy-Elie Scaïde is a young software developer. Always passionate about technology, he is moving towards electronic engineering. Self-taught, he has to his credit several projects including Edikel, Dike, GPS quiz, Pyès pèdi, and believes that technology can solve a lot of the world's current problems. His slogan "We do what you need" reflects his belief that his goal is to provide practical solutions to customer problems.
-                P.S. He likes drawing and reading. A lot.
-        .grid-4.grid-12-tablet: .me
-            img.img--max(src="/asset/image/hash.jpg",data-aos="fade-right",data-aos-anchor-placement="center-bottom")
-    section.services#services
-        h1.title.txt--center What I Do
-        .row
-            .grid: div(data-aos="fade-up",data-aos-offset="-20",data-aos-anchor-placement="center-bottom")
-                .hexagon-red: img(src="/asset/image/ui.png")
-                p.service-name UI/UX Design
-            .grid: div(data-aos="fade-up",data-aos-offset="-20",data-aos-anchor-placement="center-bottom")
-                .hexagon-blue: img(src="/asset/image/mobile.png")
-                p.service-name Mobile App
-            .grid: div(data-aos="fade-up",data-aos-offset="-20",data-aos-anchor-placement="center-bottom")
-                .hexagon-green: img(src="/asset/image/web.png")
-                p.service-name Web App
-    section.portfolio#portfolio
-        h1.title.txt--center Portfolio
-        .row
-            .grid-4
-                .p-item(data-aos="fade",data-aos-anchor-placement="bottom-bottom")
-                    img.img--max(src="/asset/image/dike.jpg")
-            .grid-4
-                .p-item(data-aos="fade")
-                    img.img--max(src="/asset/image/edikel.jpg")
-            .grid-4
-                .p-item(data-aos="fade")
-                    img.img--max(src="/asset/image/domino.jpg")
-    section.testimonies#testimonies
-        h1.title.txt--center Testimony
-        p.testimony-text.txt--center(data-aos="fade") "Always a great job"
-        p.testimony-author.txt--center(data-aos="fade") Jama Mohamed
-    section.contact.inverse#contact
-        h1.title.txt--center Contact
-        form(data-aos="fade",data-aos-delay="500",action="https://formspree.io/contact@skydev.tech",method="POST")
-            .row
-                .grid-6: input(type="text",placeholder="First Name",name="first-name")
-                .grid-6: input(type="text",placeholder="Last Name",name="last-name")
-            .row: .grid: input(type="text",placeholder="Email",name="email")
-            .row: .grid: textarea(placeholder="Message",name="message")
-            .row: .grid.txt--center: input.btn.btn--large.bg--red(type="submit",value="Send Message") 
-
+  include _component/home/slider
+  include _component/home/about
+  include _component/home/skills
+  include _component/home/services
+  include _component/home/resume
