@@ -1,0 +1,29 @@
+// Contact area start
+.contact-area.gray-bg.pb-110
+  .container
+    .contact-wrapper
+      .row
+        .col-sm-6
+          .contact-address.text-center
+            i.ti-headphone-alt
+            h4
+              | +509 3320 4050
+        .col-sm-6
+          .contact-address.text-center
+            i.ti-email
+            h4
+              a(href='mailto:hescaide@skydev.tech') hescaide@skydev.tech
+      .row
+        form#contact-us(name='contact', method='POST', netlify)
+          .form-inner
+            .col-md-5.col-sm-6
+              .input-box
+                input(name='name', placeholder='Your Name', type='text')
+                input(name='email', placeholder='Your Email', type='email')
+                input(name='budget', placeholder='Your Budget', type='text')
+            .col-md-7.col-sm-6
+              .message-box
+                textarea(name='message', cols='30', rows='2', placeholder='Project Description')
+                input.button(type='submit', value='SEND MESSAGE')
+                p.contact-send-message
+// Contact area end

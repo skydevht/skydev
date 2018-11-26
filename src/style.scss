@@ -1,7 +1,7 @@
 $primary: #3c999c;
+@import "_scss/slick";
 @import "_scss/animated_headline";
 @import "_scss/themify_icons";
-@import "_scss/responsive";
 /*********************************************************************
 Template Name: Skydev
 Template URI: https://skydev.tech
@@ -2577,3 +2577,4 @@ article.blog-post:hover {
 .dark-layout #slide-nav li a {
   border-bottom: 1px solid #121212;
 }
+@import "_scss/responsive";
