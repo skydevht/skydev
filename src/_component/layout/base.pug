@@ -2,6 +2,12 @@ doctype html
 html.no-js(lang='en')
   block settings
   head
+    script(async, src='https://www.googletagmanager.com/gtag/js?id=UA-119901517-2')
+    script.
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-119901517-2');
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     if title
@@ -35,8 +41,3 @@ html.no-js(lang='en')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js')
     script(src='/asset/js/plugins.js')
     script(src='/asset/js/main.js')
-    script.
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-119901517-2');
