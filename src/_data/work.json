@@ -1,0 +1,58 @@
+[
+  {
+    "duration": " December 2018 - Today",
+    "logo": "/asset/image/clients/gbi.png",
+    "link": "https://gbiht.com",
+    "name": "GBI",
+    "description": "My roles are: Providing technical consultation and implementing the designed solutions.",
+    "title": "Web developer"
+  },
+  {
+    "duration": " October 2018 - Today",
+    "logo": "/asset/image/clients/diversity.png",
+    "link": "https://hirediversity.us",
+    "name": " Diversity",
+    "description": "I was hired to complete a Web application that collects information about companies' objectives for diversity at the workplace. It also collect work experience and company culture, the way it is perceived by the employees.",
+    "title": "React Developer"
+  },
+  {
+    "duration": " August 2018 - Today",
+    "logo": "/asset/image/clients/bsoft.png",
+    "link": "https://www.behaviorsoft.com",
+    "name": " BehaviorSoft",
+    "description": "I was asked to add new features to a data collecting mobile application for healthcare. It was built with React Native",
+    "title": "React Native Developer"
+  },
+  {
+    "duration": " August 2018 - Today",
+    "logo": "/asset/image/clients/d2v.png",
+    "link": "http://data2visual.de",
+    "name": " Data2Visual",
+    "description": "It's an ongoing job with various tasks implementing components from specifications and/or designs.",
+    "title": "React Developer"
+  },
+  {
+    "duration": " March 2018 - Today",
+    "logo": "/asset/image/clients/tmg.png",
+    "link": "https://textmyguests.com",
+    "name": " TextMyGuests",
+    "description": "I was hired to create a complete web application that helps people plan their SMS messages well in advance. It is build with Laravel as a backend and React for the interface.",
+    "title": "Full-Stack Developer"
+  },
+  {
+    "duration": " June 2018 - July 2018",
+    "logo": "/asset/image/clients/camp-hickory.png",
+    "link": "http://camphickoryhill.com/",
+    "name": " Camp Hickory Hill",
+    "description": "Camp Hickory Hill is a summer camp for diabetic children. I was asked to update an app that monitor the food taken by the children and add new features as well. This was a native android application backed by Firebase.",
+    "title": "Android Developer"
+  },
+  {
+    "duration": " March 2018 - May 2018",
+    "logo": "/asset/image/clients/herth.png",
+    "link": "http://www.herth.co/",
+    "name": " Herth",
+    "description": "Herth is ushering in a new age of 3D visualization by redefining the way media is captured, processed, and disseminated. They're focused on using CV to train algorithms for automated furniture staging, depth estimation,  and object detection within domestic spaces. I was contacted by them to create a file format converter. The engine they use, PlayCanvas, lack a FBX converter for their JSON file format. The one I built for them was a mix of C++ for the converter and Python for the CLI.",
+    "title": "Software Engineer"
+  }
+]

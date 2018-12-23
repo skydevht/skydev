@@ -23,73 +23,12 @@
               span
                 i.ti-bag
               | Work:
-          .single-resume
-            p.work-duration October 2018 - Today
-            h4
-              span
-                img(src='/asset/image/clients/diversity.png', alt='logo')
-              |  #[a(href='https://hirediversity.us', target='_blank') Diversity]
-            p.
-              I was hired to complete a Web application that collects information
-              about companies' objectives for diversity at the workplace. It also
-              collect work experience and company culture, the way it is perceived
-              by the employees.
-            h5 React Developer
-          .single-resume
-            p.work-duration August 2018 - Today
-            h4
-              span
-                img(src='/asset/image/clients/bsoft.png', alt='logo')
-              |  #[a(href='https://www.behaviorsoft.com', target='_blank') BehaviorSoft]
-            p.
-              I was asked to add new features to a data collecting mobile application for 
-              healthcare. It was built with React Native
-            h5 React Native Developer
-          .single-resume
-            p.work-duration August 2018 - Today
-            h4
-              span
-                img(src='/asset/image/clients/d2v.png', alt='logo')
-              |  #[a(href='http://data2visual.de', target='_blank') Data2Visual]
-            p.
-              It's an ongoing job with various tasks implementing components from specifications
-              and/or designs.
-            h5 React Developer
-          .single-resume
-            p.work-duration March 2018 - Today
-            h4
-              span
-                img(src='/asset/image/clients/tmg.png', alt='logo')
-              |  #[a(href='https://textmyguests.com', target='_blank') TextMyGuests]
-            p.
-              I was hired to create a complete web application that helps people
-              plan their SMS messages well in advance. It is build with Laravel as a
-              backend and React for the interface.
-            h5 Full-Stack Developer
-          .single-resume
-            p.work-duration June 2018 - July 2018
-            h4
-              span
-                img(src='/asset/image/clients/camp-hickory.png', alt='logo')
-              |  #[a(href='http://camphickoryhill.com/', target='_blank') Camp Hickory Hill]
-            p.
-              Camp Hickory Hill is a summer camp for diabetic children.
-              I was asked to update an app that monitor the food taken by the children and add new
-              features as well. This was a native android application backed by Firebase.
-            h5 Android Developer
-          .single-resume
-            p.work-duration March 2018 - May 2018
-            h4
-              span
-                img(src='/asset/image/clients/herth.png', alt='logo')
-              |  #[a(href='http://www.herth.co/', target='_blank') Herth]
-            p.
-              Herth is ushering in a new age of 3D visualization by redefining the way 
-              media is captured, processed, and disseminated. They're focused on using
-              CV to train algorithms for automated furniture staging, depth estimation, 
-              and object detection within domestic spaces. I was contacted by them to create
-              a file format converter. The engine they use, PlayCanvas, lack a FBX converter for
-              their JSON file format. The one I built for them was a mix of C++ for the converter
-              and Python for the CLI.
-            h5 Software Engineer
-// Resume area end
+          each client in data.work
+            .single-resume
+              p.work-duration #{client.duration}
+              h4
+                span
+                  img(src=client.logo, alt='logo')
+                |  #[a(href=client.link, target='_blank') #{client.name}]
+              p #{client.description}
+              h5 #{client.title}
