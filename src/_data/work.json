@@ -1,5 +1,13 @@
 [
   {
+    "duration": " January 2019 - Today",
+    "logo": "/asset/image/clients/noukod.png",
+    "link": "https://noukod.com",
+    "name": "NouKod",
+    "description": "Primary tasks are: Designing and Implementing practical solutions.",
+    "title": "Senior developer"
+  },
+  {
     "duration": " December 2018 - Today",
     "logo": "/asset/image/clients/gbi.png",
     "link": "https://gbiht.com",
@@ -8,7 +16,7 @@
     "title": "Web developer"
   },
   {
-    "duration": " October 2018 - Today",
+    "duration": " October 2018 - January  2019",
     "logo": "/asset/image/clients/diversity.png",
     "link": "https://hirediversity.us",
     "name": " Diversity",
