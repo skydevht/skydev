@@ -13,8 +13,7 @@
   "//": "CUSTOM CONFIGURATION",
   "config": {
     "directory": {
-      "development": "tmp",
-      "production": "build",
+      "development": "tmp", "production": "build",
       "ghpages": ".publish",
       "source": "src",
       "data": "_data",
