@@ -1,0 +1,2 @@
+[context.v2]
+  command = "gatsby build"
