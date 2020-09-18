@@ -1,4 +1,5 @@
 [context.v2]
   command = "gatsby build"
+  publish = "public"
   [context.v2.environment]
     NODE_VERSION = "10.15.3"
