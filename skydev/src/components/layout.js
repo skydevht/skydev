@@ -1,13 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from 'react-helmet'
 
 import Header from "./header"
 import "./layout.css"
@@ -25,23 +19,54 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+
+        <title>Skydev</title>	
+
+        <meta name="keywords" content="HTML5 Template" />
+        <meta name="description" content="Skydev website" />
+        <meta name="author" content="Reginad Victor" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no" />
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7COpen+Sans:400,700,800" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css" />
+        <link rel="stylesheet" href="vendor/animate/animate.min.css" />
+        <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css" />
+        <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css" />
+
+        <link rel="stylesheet" href="css/theme.css" />
+        <link rel="stylesheet" href="css/theme-elements.css" />
+        
+        <link rel="stylesheet" href="css/demos/demo-landing.css" />
+
+        <link rel="stylesheet" href="css/skins/skin-landing.css" /> 
+
+        <link rel="stylesheet" href="css/custom.css" />
+
+        <script src="vendor/modernizr/modernizr.min.js"></script>
+      </Helmet>
+      <body className="alternative-font-4 loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 100}">
+        <div className="loading-overlay">
+          <div className="bounce-loader">
+            <div className="bounce1"></div>
+            <div className="bounce2"></div>
+            <div className="bounce3"></div>
+          </div>
+        </div>
+        <div className="body">
+          <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+          <main>{children}</main>
+        </div>
+      </body>
     </>
   )
 }
