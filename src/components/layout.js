@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import Header from './header';
-
+import Footer from './footer';
 const Layout = ({ children }) => {
     return (
         <>
@@ -70,6 +70,7 @@ const Layout = ({ children }) => {
                     <Header/>
                     <main>{children}</main>
                 </div>
+                <Footer />
             </body>
         </>
     )
