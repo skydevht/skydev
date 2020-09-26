@@ -33,10 +33,10 @@ const Layout = ({ children }) => {
                 <link rel="stylesheet" href="/assets/css/theme.css" />
                 <link rel="stylesheet" href="/assets/css/theme-elements.css" />
                 
-                {/* <link rel="stylesheet" href="/assets/css/demos/demo-landing.css" />
+                <link rel="stylesheet" href="/assets/css/demos/demo-landing.css" />
                 <link rel="stylesheet" href="/assets/css/theme-blog.css" />
                 <link rel="stylesheet" href="/assets/css/theme-shop.css" />
-                <link rel="stylesheet" href="/assets/css/skins/skin-landing.css" />  */}
+                <link rel="stylesheet" href="/assets/css/skins/skin-landing.css" /> 
                 
                 
                 <link rel="stylesheet" href="/assets/css/skins/default.css" /> 
@@ -46,7 +46,6 @@ const Layout = ({ children }) => {
                 <script src="/assets/vendor/modernizr/modernizr.min.js" />
                 <script src="/assets/vendor/jquery/jquery.min.js" />
                 <script src="/assets/vendor/jquery.appear/jquery.appear.min.js" />
-                <script src="/assets/vendor/jquery.easing/jquery.easing.min.js" />
                 <script src="/assets/vendor/jquery.cookie/jquery.cookie.min.js" />
                 <script src="/assets/vendor/popper/umd/popper.min.js" />
                 <script src="/assets/vendor/bootstrap/js/bootstrap.min.js" />
@@ -71,10 +70,11 @@ const Layout = ({ children }) => {
             </div> 
             <div className="body">
                 <Header />
-                 {children}
+                  <div role="main" class="main" id="home">
+                    {children}
+                  </div>
                 <Footer />
             </div>
-            
         </>
     )
 }
