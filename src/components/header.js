@@ -4,7 +4,6 @@ import { Link } from "gatsby";
 //import PropTypes from "prop-types";
 
 const Header = () => (
-  <React.Fragment>  
     <header id="header" className="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': false, 'stickyEnableOnMobile': true, 'stickyStartAt': 70, 'stickyChangeLogo': false, 'stickyHeaderContainerHeight': 70}">
       <div className="header-body border-top-0 bg-dark box-shadow-none">
         <div className="header-container container">
@@ -23,17 +22,17 @@ const Header = () => (
                     <nav className="collapse">
                       <ul className="nav nav-pills" id="mainNav">
                         <li className="dropdown">
-                          <a className="dropdown-item dropdown-toggle" href="index.html">
+                          <a className="dropdown-item dropdown-toggle" href="/">
                             Home
                           </a>
                         </li>
                         <li className="dropdown">
-                          <a className="dropdown-item dropdown-toggle" data-hash data-hash-offset="130" href="#demos">
+                          <a className="dropdown-item dropdown-toggle" data-hash data-hash-offset="130" href="/">
                             Demos
                           </a>
                         </li>
                         <li className="dropdown">
-                          <a className="dropdown-item dropdown-toggle" href="#">
+                          <a className="dropdown-item dropdown-toggle" href="/">
                             Features
                           </a>
                         </li>
@@ -47,7 +46,6 @@ const Header = () => (
         </div>
       </div>
     </header>
-</React.Fragment>
 )
 
 
