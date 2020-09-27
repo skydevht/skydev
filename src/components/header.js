@@ -21,7 +21,7 @@ const Header = () => {
               <div class="header-row">
                 <div class="header-logo pt-4">
                   <a href="index.html">
-                    <img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="/static/img/logo.png" />
+                    <img alt="Skydev Logo" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="/static/img/logo.png" />
                   </a>
                 </div>
               </div>

@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
                 <script src="/assets/vendor/magnific-popup/jquery.magnific-popup.min.js" />
                 <script src="/assets/vendor/vide/jquery.vide.min.js" />
                 <script src="/assets/vendor/vivus/vivus.min.js" />
-                <body className="alternative-font-4 loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 100}" />
+                {/* <body className="alternative-font-4 loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 100}" /> */}
             </Helmet>
             <div class="loading-overlay">
                 <div class="bounce-loader">
