@@ -39,9 +39,13 @@ const Layout = ({ children }) => {
                 <link rel="stylesheet" href="/assets/css/skins/skin-landing.css" /> 
                 
                 
+                {/**css for the contact form */}
+                <link rel="stylesheet" href="/assets/css/demos/demo-medical-2.css" /> 
+                <link rel="stylesheet" href="/assets/css/skins/skin-medical-2.css" /> 
+
+
                 <link rel="stylesheet" href="/assets/css/skins/default.css" /> 
                 <link rel="stylesheet" href="/assets/css/custom.css" />
-                    
 
                 <script src="/assets/vendor/modernizr/modernizr.min.js" />
                 <script src="/assets/vendor/jquery/jquery.min.js" />
@@ -59,6 +63,11 @@ const Layout = ({ children }) => {
                 <script src="/assets/vendor/magnific-popup/jquery.magnific-popup.min.js" />
                 <script src="/assets/vendor/vide/jquery.vide.min.js" />
                 <script src="/assets/vendor/vivus/vivus.min.js" />
+
+                <script src="/assets/js/views/view.contact.js"></script>
+                <script src="/assets/js/demos/demo-medical-2.js"></script>
+                <script src="/assets/js/custom.js"></script>
+                {/* <script src="/assets/js/theme.init.js"></script> */}
                 {/* <body className="alternative-font-4 loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 100}" /> */}
             </Helmet>
             <div class="loading-overlay">
