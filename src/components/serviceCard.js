@@ -1,25 +1,19 @@
 import React from "react";
 
 
-const ServiceCard = ({ serviceImg, serviceTitle, serviceDesc}) => {
+const ServiceCard = ({ serviceIcon, serviceTitle, serviceDesc}) => {
     return(
-        <div class="col-sm-8 col-md-4 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="500" style={{ animationDelay: "500ms" }}>
-            <article>
-                <div className="row">
-                    <div className="col">
-                        <a href="#" className="text-decoration-none">
-                            <img src={serviceImg} class="img-fluid hover-effect-2 mb-3" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div className="col">
-                        <h3 className="mb-0 text-4 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none" >{serviceTitle}</h3>
-                        <p className="mb-2 lead text-4">{serviceDesc}</p>
-                    </div>
-                </div>
-            </article>
+        <div class="col-lg-4 appear-animation animated appear-animation-visible" data-appear-animation="fadeInUpShorter">
+        <div class="feature-box feature-box-style-2">
+            <div class="feature-box-icon">
+                <i class={`icons icon-${serviceIcon}  text-color-light`}></i>
+            </div>
+            <div class="feature-box-info">
+                <h4 class="font-weight-bold text-color-light text-4 mb-2">{ serviceTitle }</h4>
+                <p class="talternative-fon text-color-light opacity-7">{ serviceDesc }</p>
+            </div>
         </div>
+    </div> 
 );
 }
 

@@ -14,7 +14,7 @@ const Contact = () => {
                 <div class="col">
                     <h3 class="text-color-quaternary font-weight-bolder text-capitalize mb-2">Send a Message</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat ex finibus urna tincidunt, auctor ullamcorper risus luctus.</p>
-                    <form className="contact-form custom-form-style-1">
+                    <form className="contact-form custom-form-style-1" data-appear-animation="fadeIn" data-appear-animation-delay="100" action="php/contact-form.php" method="POST">
                         <div class="contact-form-success alert alert-success d-none mt-4">
                             <strong>Success!</strong> Your message has been sent to us.
                         </div>
