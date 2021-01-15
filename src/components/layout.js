@@ -1,4 +1,5 @@
 import React from 'react';
+import { withPrefix } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
 import Header from './header';
@@ -48,22 +49,6 @@ const Layout = ({ children }) => {
                 <link rel="stylesheet" href="/assets/css/custom.css" />
 
                 <script src="/assets/vendor/modernizr/modernizr.min.js" />
-                <script src="/assets/vendor/jquery/jquery.min.js" />
-                <script src="/assets/vendor/jquery.appear/jquery.appear.min.js" />
-                <script src="/assets/vendor/jquery.cookie/jquery.cookie.min.js" />
-                <script src="/assets/vendor/popper/umd/popper.min.js" />
-                <script src="/assets/vendor/bootstrap/js/bootstrap.min.js" />
-                <script src="/assets/vendor/common/common.min.js" />
-                <script src="/assets/vendor/jquery.validation/jquery.validate.min.js" />
-                <script src="/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js" />
-                <script src="/assets/vendor/jquery.gmap/jquery.gmap.min.js" />
-                <script src="/assets/vendor/jquery.lazyload/jquery.lazyload.min.js" />
-                <script src="/assets/vendor/isotope/jquery.isotope.min.js" />
-                <script src="/assets/vendor/owl.carousel/owl.carousel.min.js" />
-                <script src="/assets/vendor/magnific-popup/jquery.magnific-popup.min.js" />
-                <script src="/assets/vendor/vide/jquery.vide.min.js" />
-                <script src="/assets/vendor/vivus/vivus.min.js" />
-
                 <script src="/assets/js/views/view.contact.js"></script>
                 <script src="/assets/js/demos/demo-medical-2.js"></script>
                 <script src="/assets/js/custom.js"></script>
@@ -84,6 +69,23 @@ const Layout = ({ children }) => {
                   </div>
                 <Footer />
             </div>
+            <Helmet>
+                <script src="withPrefix('../../assets/vendor/jquery/jquery.min.js')"  type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/jquery.appear/jquery.appear.min.js')" type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/jquery.cookie/jquery.cookie.min.js')" type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/popper/umd/popper.min.js')" type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/bootstrap/js/bootstrap.min.js')" type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/common/common.min.js')" type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/jquery.validation/jquery.validate.min.js')" type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')"  type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/jquery.gmap/jquery.gmap.min.js')" type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/jquery.lazyload/jquery.lazyload.min.js')" type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/isotope/jquery.isotope.min.js')" type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/owl.carousel/owl.carousel.min.js')" type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/magnific-popup/jquery.magnific-popup.min.js')" type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/vide/jquery.vide.min.js')" type="text/javascript" />
+                <script src="withPrefix('../../assets/vendor/vivus/vivus.min.js')" type="text/javascript" />
+            </Helmet>
         </>
     )
 }
