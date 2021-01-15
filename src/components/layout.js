@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
                 <script src="/assets/js/demos/demo-medical-2.js"></script>
                 <script src="/assets/js/custom.js"></script>
                 {/* <script src="/assets/js/theme.init.js"></script> */}
-                {/* <body className="alternative-font-4 loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 100}" /> */}
+                <body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 500}" /> 
             </Helmet>
             <div class="loading-overlay">
                 <div class="bounce-loader">
@@ -70,21 +70,21 @@ const Layout = ({ children }) => {
                 <Footer />
             </div>
             <Helmet>
-                <script src="withPrefix('../../assets/vendor/jquery/jquery.min.js')"  type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/jquery.appear/jquery.appear.min.js')" type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/jquery.cookie/jquery.cookie.min.js')" type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/popper/umd/popper.min.js')" type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/bootstrap/js/bootstrap.min.js')" type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/common/common.min.js')" type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/jquery.validation/jquery.validate.min.js')" type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')"  type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/jquery.gmap/jquery.gmap.min.js')" type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/jquery.lazyload/jquery.lazyload.min.js')" type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/isotope/jquery.isotope.min.js')" type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/owl.carousel/owl.carousel.min.js')" type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/magnific-popup/jquery.magnific-popup.min.js')" type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/vide/jquery.vide.min.js')" type="text/javascript" />
-                <script src="withPrefix('../../assets/vendor/vivus/vivus.min.js')" type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/jquery/jquery.min.js')}  type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/jquery.appear/jquery.appear.min.js')} type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/jquery.cookie/jquery.cookie.min.js')} type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/popper/umd/popper.min.js')} type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/bootstrap/js/bootstrap.min.js')} type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/common/common.min.js')} type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/jquery.validation/jquery.validate.min.js')} type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')}  type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/jquery.gmap/jquery.gmap.min.js')} type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/jquery.lazyload/jquery.lazyload.min.js')} type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/isotope/jquery.isotope.min.js')} type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/owl.carousel/owl.carousel.min.js')} type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/magnific-popup/jquery.magnific-popup.min.js')} type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/vide/jquery.vide.min.js')} type="text/javascript" />
+                <script src={withPrefix('../../assets/vendor/vivus/vivus.min.js')} type="text/javascript" />
             </Helmet>
         </>
     )
