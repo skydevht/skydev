@@ -6,6 +6,10 @@
   "author": "Holy-Elie Scaide <skydhash@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "yarn run develop"
+  },
   "dependencies": {
     "gatsby": "^2.24.63",
     "gatsby-plugin-react-helmet": "^3.3.11",
